@@ -1,6 +1,45 @@
 @charset "utf-8";
 /* CSS Document */
-h1 {
-	font-size: 200%;
-	color: #0C0079;  }
+header {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-color: rgba(246,246,246,1.00);
+	color: rgba(146,146,146,1.00);
+	padding-left: 115px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+	
+}
+body {
+	width: 1200px;
+	height: 600px;
+	background-color: white;
+	margin: 5px auto;
+	font-size: 20px;
+}
+
+#sidebarA {
+	width: 300px;
+	height: 400px;
+	float: left;
+	background-color: rgba(246,246,246,1.00);
+}
+
+
+
+main {
+	width: 800px;
+	height: 400px;
+	float: left;
+	<!--border: 1px solid blue;  -->
+	width: 70%;
+	text-align: left;
+	padding-left: 4%;
+}
+
+
+footer {
+	float: left;
+	height: 100px;
+}
 
