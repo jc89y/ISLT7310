@@ -11,7 +11,7 @@ header {
 	
 }
 body {
-	width: 1200px;
+	width: 1300px;
 	height: 600px;
 	background-color: white;
 	margin: 5px auto;
@@ -19,7 +19,7 @@ body {
 }
 
 #sidebarA {
-	width: 300px;
+	width: 350px;
 	height: 700px;
 	float: left;
 	background-color: rgba(246,246,246,1.00);
@@ -28,10 +28,9 @@ body {
 
 
 main {
-	width: 800px;
 	height: 700px;
 	float: left;
-	width: 70%;
+	width: 60%;
 	text-align: left;
 	padding-left: 4%;
 }
@@ -41,4 +40,15 @@ footer {
 	float: left;
 	height: 100px;
 }
+
+.menu ul li {
+	margin-bottom: 2px;
+    display: block;
+    border: 4px solid black;
+    padding: 15px 15px 15px 0px;
+    background-color: lightgray;
+    width: 180px;
+    text-align: center;
+}
+
 

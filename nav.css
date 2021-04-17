@@ -1,14 +1,58 @@
 @charset "utf-8";
 /* CSS Document */
 /*menu elements */
+
+.menu ul {
+	list-style-type: none;
+	margin-left: .2em;
+	margin-bottom: 2em;
+}
+
 .menu ul li {
-	margin-bottom: 2px;
-    display: block;
-    border: 4px solid black;
-    padding: 15px 15px 15px 0px;
-    background-color: lightgray;
-    width: 180px;
-    text-align: center;
+	width: 200px;
+	margin-bottom: .5em;
+}
+
+.menu ul ul {
+	display: none;
+	position: absolute;
+	left: 380px;
+}
+
+.menu ul ul li {
+	float: none;
+	position: relative;
+	}
+
+.menu ul ul li ul{
+	position: absolute;
+	left: 15%;
+}
+
+.menu ul li.lastitem ul li ul{
+	left: -100%;
+}
+/* This was missing before  */
+.menu ul li:hover > ul {
+	display: block;
+}
+
+.menu > ul::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.menu ul li.lastitem a {
+	width: 178px;
+}
+
+.menu ul li a.current{
+	color: yellow;
+}
+
+.menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: gray;
 }
 
 .menu h2 {
