@@ -3,6 +3,8 @@
 /*menu elements */
 
 .menu ul {
+	display: flex;
+	flex-direction: column;
 	list-style-type: none;
 	margin-left: .2em;
 	margin-bottom: 2em;
