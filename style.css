@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 header {
+	display: flex;
 	font-family: 'Montserrat', sans-serif;
 	clear: both;
 	background-color: rgba(246,246,246,1.00);
@@ -10,6 +11,11 @@ header {
 	padding-bottom: 57px;
 	
 }
+body, sidebarA, main {
+		flex-basis: 25%;
+		flex-grow: 1;
+}
+
 body {
 	width: 1300px;
 	height: 600px;
