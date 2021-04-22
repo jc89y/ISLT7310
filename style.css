@@ -1,27 +1,34 @@
 @charset "utf-8";
 /* CSS Document */
-header {
-	display: flex;
-	font-family: 'Montserrat', sans-serif;
-	clear: both;
-	background-color: rgba(246,246,246,1.00);
-	color: rgba(146,146,146,1.00);
-	padding-left: 115px;
-	padding-top: 57px;
-	padding-bottom: 57px;
-	
-}
-body, sidebarA, main {
-		flex-basis: 25%;
-		flex-grow: 1;
-}
 
 body {
-	width: 1300px;
-	height: 600px;
-	background-color: white;
-	margin: 5px auto;
-	font-size: 20px;
+	display: grid;
+	...
+	grid-template-columns: [body-start nav-start] 500px [nav-end sec-start] 1fr [sec3-start] 1fr [sec-end main-end];
+	grid-template-rows: [row1-start] 80px [row2-start] 1fr [row3-start] 1fr [row4-start] 60px [rows-end];
+	grid-gap: 16px;
+}
+/* header { grid-row: row1-start/row2-start; grid-column: body-start/body-end;}   */
+nav { grid-row: row2-start/row4-start; grid-colunn: nav-start/nav-end;}
+#s1 { grid-row: row2-start/row3-start; grid-column: sec-start/sec-end;}
+#s2 { grid-row: row3-start/row4-start; grid-column: sec-start/sec3-start;}
+#s3 {grid-row: row3-start/row4-start; grid-column: column3-start/content-end;}
+/* footer { grid-row: row4-start/rows-end; grid-column: body-start/body-end;}  */
+		
+nav, section, main, footer {
+	display: grid;
+	width: 100%;
+	margin-bottom: 7px;
+}
+
+nav {
+	grid-template: : 80px / 120px 1fr;
+	grid-gap: 20px;
+}
+
+nav div: nth-of-type(2){
+	height: 40px;
+	align-self: center;
 }
 
 #sidebarA {
@@ -31,18 +38,20 @@ body {
 	background-color: rgba(246,246,246,1.00);
 }
 
-
-
 main {
-	height: 700px;
-	float: left;
-	width: 60%;
+	grid-template: 2000px / repeat(1, 950px);
+	align-content: center;
+	justify-content: space-evenly;
+	height: 600px;
+	width: 100%;
 	text-align: left;
 	padding-left: 4%;
+	font-size: 20px;
 }
 
-
 footer {
+	align-items: center;
+	justify-items: center;
 	float: left;
 	height: 100px;
 }
@@ -57,4 +66,72 @@ footer {
     text-align: center;
 }
 
+.menu ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin-left: .2em;
+	margin-bottom: 2em;
+}
 
+.menu ul li {
+	width: 200px;
+	margin-bottom: .5em;
+}
+
+.menu ul ul {
+	display: none;
+	position: absolute;
+	left: 200px;
+}
+
+.menu ul ul li {
+	float: none;
+	position: relative;
+	}
+
+.menu ul ul li ul{
+	position: absolute;
+	left: 15%;
+}
+
+.menu ul li.lastitem ul li ul{
+	left: -100%;
+}
+/* This was missing before  */
+.menu ul li:hover > ul {
+	display: block;
+}
+
+.menu > ul::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.menu ul li.lastitem a {
+	width: 178px;
+}
+
+.menu ul li a.current{
+	color: yellow;
+}
+
+.menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: gray;
+}
+
+.menu h2 {
+	padding-left: 3%;
+}
+
+header {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-color: rgba(246,246,246,1.00);
+	color: rgba(146,146,146,1.00);
+	padding-left: 115px;
+	padding-top: 25px;
+	padding-bottom: 57px;
+	
+}
