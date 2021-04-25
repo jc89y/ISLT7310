@@ -45,39 +45,9 @@ body, #sidebarA, main {
 		flex-grow: 1;
 		align-items: center;
 }
-/*
-body {
-	width: 1300px;
-	height: 600px;
-	background-color: white;
-	margin: 5px auto;
-	font-size: 20px;
-}
 
-#sidebarA {
-	width: 350px;
-	height: 700px;
+#Vresume {
 	float: left;
-	background-color: rgba(246,246,246,1.00);
+	margin-right: 20px;
+	margin-top: 5px;
 }
-
-
-
-main {
-	height: 700px;
-	float: left;
-	width: 60%;
-	text-align: left;
-	padding-left: 4%;
-}
-
-
-footer {
-	float: left;
-	height: 100px;
-}
-
-*/
-
-
-
