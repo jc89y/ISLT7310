@@ -2,6 +2,13 @@
 /* CSS Document */
 /*menu elements */
 
+@media screen and (max-width: 760px) {
+	main {flex-direction: column;
+		section {order: 1;}
+		aside {order: 2;}
+	}
+}
+
 
 .menu ul li {
 	margin-bottom: 2px;
@@ -29,7 +36,7 @@
 .menu ul ul {
 	display: none;
 	position: absolute;
-	left: 380px;
+	left: 150px;
 }
 
 .menu ul ul li {
