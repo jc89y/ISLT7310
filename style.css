@@ -1,18 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
-body {
-	display: grid;
-	grid-template-columns: 100px 10;
-	grid-template-rows: 200px;
-	grid-gap: 16px;
-	font-size: 20px;
-}
-
 header {
-	grid-row: 1 / 2;
-	grid-column: 1 / 4;
 	font-family: 'Montserrat', sans-serif;
+	clear: both;
 	background-color: rgba(246,246,246,1.00);
 	color: rgba(146,146,146,1.00);
 	padding-left: 115px;
@@ -20,32 +10,12 @@ header {
 	padding-bottom: 57px;
 	
 }
-
-#sidebarA {
-	grid-row: 2 / 4;
-	grid-column: 1 / 2;
-	width: 350px;
-	height: 700px;
-	float: left;
-	background-color: rgba(246,246,246,1.00);
-}
-
-footer {
-	display: grid;
-	grid-row: 4 / 5;
-	grid-column: 1 / 4;
-	height: 40px;
-	align-items: center;
-	justify-items: center;
-}
-
-
 body, #sidebarA, main {
 		flex-basis: 25%;
 		flex-grow: 1;
 		align-items: center;
 }
-/*
+
 body {
 	width: 1300px;
 	height: 600px;
@@ -76,8 +46,6 @@ footer {
 	float: left;
 	height: 100px;
 }
-
-*/
 
 
 
