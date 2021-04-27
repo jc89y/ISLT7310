@@ -1,6 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face { 
+
+font-family: Astloch; /*downloaded from Google Fonts: https://fonts.google.com/specimen/Astloch#pairings*/
+
+src: url("Astloch-Regular.ttf"); /*link to font*/
+
+}
+
+blockquote {font-family: Astloch, serif; } /*now we can use the name we provided in the @font-face style to use the font file we uploaded to the server space*/
+
 body {
 	display: grid;
 	grid-template-columns: 100px 10;
@@ -51,3 +61,5 @@ body, #sidebarA, main {
 	margin-right: 20px;
 	margin-top: 5px;
 }
+
+
