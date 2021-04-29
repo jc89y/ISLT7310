@@ -98,6 +98,9 @@ body, #sidebarA, main {
 		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 		border-top: 1px solid black;
 	}
+	@page {
+  		margin: 1in;
+	}
 	
 }
 
