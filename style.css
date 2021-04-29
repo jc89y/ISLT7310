@@ -67,19 +67,13 @@ body, #sidebarA, main {
 		font-family: "Times New Roman", Times, serif;
 		background-color: white;
 		color: black;
-		width: auto;
+		font-size: 12pt;
 	}
 	
-	header {
-		color: black;
-		border-bottom: 1px solid black;
-		font-family: serif;
-		padding-top: 1px;
-		padding-bottom: 1px;
-	}
-	
+
 	h1, h2 {
 		font-family: Verdana, Arial, Helvetica, sans-serif;
+
 	}
 	
 	.menu{
