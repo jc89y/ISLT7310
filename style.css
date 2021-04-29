@@ -54,6 +54,18 @@ footer {
 	color: white;
 }
 
+.mu:hover {
+	transform: scale(2, 2);
+}
+
+.fa-envelope-square:hover {
+	transform: scale(2, 2);
+}
+
+.fa-mobile-alt:hover {
+	transform: scale(2, 2);
+}
+
 
 body, #sidebarA, main {
 		flex-basis: 25%;
