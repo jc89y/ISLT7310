@@ -112,6 +112,14 @@ body, #sidebarA, main {
 	background-color: gray;
 }
 
+#awslogo {
+	float: left;
+	margin-right: 20px;
+	margin-top: 5px;
+	padding: 2px;
+	background-color: gray;
+}
+
 @media print {
 	body {
 		font-family: "Times New Roman", Times, serif;
