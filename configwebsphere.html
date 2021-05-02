@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Learn</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="nav.css" type="text/css">
+</head>
+
+<body>
+		<header><h1>Learning:&nbsp; Configure IBM Websphere for External Database Connectivity&nbsp;&nbsp;</h1>
+			<h3>By John Cosper</h3>
+	</header>
+	<aside id="sidebarA">
+		    <nav class="menu">          
+          		<ul>
+               		<li><a href="index.html" title="Link">Home</a></li>
+            		<li><a href="about.html" title="Link">About</a></li>
+            		<li><a href="learn.html" title="Link">Learn</a>
+						<ul>
+							<li><a href="learnAWS.html">AWS Instances</a></li>
+							<li><a href="configwebsphere.html">Configure Websphere</a></li>
+							<li><a href="configuremaximo.html">Configure Maximo</a></li>
+						</ul>
+					</li>
+					<li><a href="references.html" title="Link">References</a>
+					<li><a href="contact.html" title="Link">Contact</a>
+          		</ul>
+  			</nav>
+	</aside>
+	<main>			
+		<p> <h2>IBM Websphere: Configuring Datasources&nbsp; &nbsp; &nbsp;</h2>
+IBM Websphere is the application server that hosts IBM Maximo and other enterprise applications.  IBM Maximo requires that Websphere be configured for database connectivity before it can export data to an external database.  </p>
+
+	  <video id="ConfigWebSphere" width="480" height="270" controls><source src="ConfigureWebsphere.mp4"></video>
+<p>The first step to configure Websphere for external database connectivity is to configure JDBC Providers.  You must provide the prover jdbc driver type for the datbase (example: SQL SERVER) and verify that the path to the sqljdbc.jar file is correct.</p>
+	  <p>The next step is to configure the datasource.  While configuring the datasource, you must configure a JAAS-J2C Authentication to the external database.  To configure the datasource, give it a name, JDNI name, Security settings for authentication, and the datasource properties.   Datasource properties include: database name, port number, and server name (or IP address). </p>
+<p>&nbsp;</p>
+	  <!--Home content: purpuse -->
+				
+	</main>
+<footer><h6>John Cosper; jc89y@mail.missouri.edu; Copyright 2021 University of Missouri</h6></footer>
+</body>
+</html>
