@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS document for mobile layouts */
+ 
+/* Hide the mobile menu initially */
+#mobile_menu {
+	display: none;
+}
+
+/* tablet portrain to standard 960 */
+@media only screen and (max-wdith: 959px){
+	#nav_menu ul li a { 
+		font-size: .875em; 
+	}
+	
+	article h1 {
+		font-size: 1.5em;    /* 24 / 16 */
+	}
+	
+	article h2 {
+		font-size: 1.125em;    /* 18 / 16 */
+	}
+}
+
+/* mobile landscape to tablet portrait */
+@media only screeen and (max-width: 767px) {
+	#nav-menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	
+	body {
+		width: 100%;
+		margin: 0;
+		border: none;  
+	}
+	header, footer p {
+		text-align: center;     	
+	}
+	footer p {
+		margin-right: 0;
+	}
+	header h2{
+		font-size: 1.625em;
+		margin: .4em 0 .25em 0;
+	}
+	header h3 {
+		font-size: 1em;
+		margin-left: 0;
+	}
+	header img {
+		float: none;
+	}
+}

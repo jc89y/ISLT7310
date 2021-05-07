@@ -31,58 +31,23 @@
   			</nav>
 	</aside>
 	<main>			
-	  <p>
-		<figure>
-		<figcaption>Learning Videos Library</figcaption>
-		<table>
-			<thead>
-				<tr>
-					<th class="left">Video</th>
-					<th>Year Published</th>
-					<th>Author</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td class="left">AWS Instances</td>
-					<td>March 2021</td>
-					<td>John Cosper</td>
-				</tr>
-				<tr>
-					<td class="left">Configure Websphere</td>
-					<td>April 2021</td>
-					<td>John Cosper</td>
-				</tr>
-				<tr>
-					<td class="left">Configure Maximo</td>
-					<td>May 2021</td>
-					<td>John Cosper</td>
-				</tr>
-				<tr>
-					<td class="left">Export Data in Maximo</td>
-					<td>*Coming Soon</td>
-					<td>John Cosper</td>
-				</tr>
-				.
-				.
-			</tbody>
-			<tfoot>
-				<tr>
-						<th class="left">Total Videos</th>
-						<td><strong>3</strong></td>
-						<td></td>
-				</tr>
-			</tfoot>
-		</table>
-		</figure>
-		</p>
-	&nbsp;&nbsp;
-	<div id="contact">
-	<p> Contact: </p>
-	<p>
-		  John Cosper<br/>
-		Phone:  777.333.7777<br/>
-		Email:  jc89y@mail.missouri.edu</p>
+	<div>
+		<p> <h2> Questions?  </h2>
+		<h5>Please use the contact form below to send us a message. </h5></p>
+		<p>
+		<form id="contact" method="POST" action="mailto:jc89y@mail.missouri.edu?subject=Educational Website Contact&body=message" enctype="text/plain">
+			<label for="firstname"> First name:</label>
+			<input type="text" id="firstname" autofocus required><br>
+			<label for="lastname"> Last name:</label>
+			<input type="text" id="lastname" autofocus required><br>
+			<label for="email"> Email:</label>
+			<input type="email" id="email" autofocus required><br>
+			
+			<label for="message"> Message:</label>
+			<textarea id="message" placeholder="Please type your message here" autofocus required></textarea><br>
+			<input type="submit" id="sendemail" value="Send Email">
+		</form>	</p>	
+	
 	</div>
 				
 	</main>
