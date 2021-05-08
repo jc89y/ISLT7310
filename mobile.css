@@ -53,4 +53,7 @@
 	header img {
 		float: none;
 	}
+	#sidebarA {
+		height: 10em;
+	}
 }

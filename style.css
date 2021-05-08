@@ -43,7 +43,7 @@ h3 {
 	grid-row: 2 / 4;
 	grid-column: 1 / 2;
 	width: 17em;
-	height: 100%;
+	height: 33em;
 	float: left;
 	background-color: rgba(246,246,246,1.00);
 }
@@ -52,7 +52,7 @@ footer {
 	display: grid;
 	grid-row: 4 / 5;
 	grid-column: 1 / 4;
-	height: 90%;
+	height: 4em;
 	align-items: center;
 	justify-items: center;
 	background-image: url("french-mountains.jpg");
