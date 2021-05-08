@@ -34,8 +34,8 @@ header {
 #sidebarA {
 	grid-row: 2 / 4;
 	grid-column: 1 / 2;
-	width: 350px;
-	height: 700px;
+	width: 17em;
+	height: 100%;
 	float: left;
 	background-color: rgba(246,246,246,1.00);
 }
@@ -67,7 +67,7 @@ footer {
 }
 
 
-body, #sidebarA, main {
+body, main {
 		flex-basis: 25%;
 		flex-grow: 1;
 		align-items: center;
@@ -161,6 +161,32 @@ body, #sidebarA, main {
 		background-color: lightgoldenrodyellow;
 	}
 }
+
+#message {
+	height: 5em;
+	width: 25em;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	margin-left: 1em;
+}
+	
+label {
+	float: left;
+	width: 5em;
+	text-align: right;
+}
+
+input {
+	margin-left: 1em;
+	margin-bottom: .5em;
+	width: 25em;
+}
+#sendemail {
+	margin-left: 8.5em;
+	width: 25.5em;
+	
+}
+
+
 
 @media print {
 	body {
