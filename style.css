@@ -16,7 +16,7 @@ body {
 	grid-template-columns: 100px 10;
 	grid-template-rows: 200px;
 	grid-gap: 16px;
-	font-size: 20px;
+	font-size: 1.3em;
 }
 
 header {
@@ -25,10 +25,18 @@ header {
 	font-family: 'Montserrat', sans-serif;
 	background-color: rgba(246,246,246,1.00);
 	color: rgba(146,146,146,1.00);
-	padding-left: 115px;
-	padding-top: 57px;
-	padding-bottom: 57px;
-	
+	padding-left: 5em;
+	padding-top: 4%;
+	padding-bottom: 8%;
+	height: 15%
+}
+
+h1 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 130%;
 }
 
 #sidebarA {
@@ -44,7 +52,7 @@ footer {
 	display: grid;
 	grid-row: 4 / 5;
 	grid-column: 1 / 4;
-	height: 150px;
+	height: 90%;
 	align-items: center;
 	justify-items: center;
 	background-image: url("french-mountains.jpg");

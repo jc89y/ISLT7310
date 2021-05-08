@@ -36,7 +36,8 @@
 		border: none;  
 	}
 	header, footer p {
-		text-align: center;     	
+		text-align: center; 
+		height: auto;
 	}
 	footer p {
 		margin-right: 0;
