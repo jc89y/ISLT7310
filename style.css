@@ -203,6 +203,10 @@ input {
 	float: left;
 }
 
+#Webspherelogo {
+	float: left;	
+}
+
 @media print {
 	body {
 		font-family: "Times New Roman", Times, serif;
