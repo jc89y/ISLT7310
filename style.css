@@ -197,10 +197,11 @@ input {
 #sendemail {
 	margin-left: 8.5em;
 	width: 25.5em;
-	
 }
 
-
+#AWSheading {
+	float: left;
+}
 
 @media print {
 	body {
