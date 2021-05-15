@@ -36,6 +36,10 @@ header {
 	padding-bottom: 1em;
 	height: 8em;
 }
+#date {
+	font-size: small;
+	text-align: center;
+}
 
 h1 {
 	font-size: 200%;
@@ -203,7 +207,7 @@ input {
 	float: left;
 }
 
-#Webspherelogo {
+#Webspherelogo, #maxlogo {
 	float: left;	
 }
 
